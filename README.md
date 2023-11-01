@@ -39,6 +39,10 @@ The engine is early in development, but the following features are planned:
 * Right-handed coordinate system
 * Json for asset and metadata serialization
 * Lz4 and Brotli compression
+* `is null` is the same as `== null`
+* Property names are capitalized.
+* Properties can be serialized.
+* Built-in support for nuget packages.
 
 ## Notable Classes
 
@@ -55,10 +59,10 @@ Due to the design, any custom scripts can inherit directly from `Component`, `Be
 Asset:
 ```json
 {
-	1: {
+	"1": {
 		"$type": "CoreEngine.GameNode"
 	},
-	2: {
+	"2": {
 		"$type": "CoreEngine.Transform"
 	}
 }
